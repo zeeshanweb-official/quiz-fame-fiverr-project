@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from quizfame.com/quiz/apex-legends-knowledge-test by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Oct 2019 13:10:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="csrf-token" content="U9XOug8WI1vnlv55D7YnygWCsHfg44G1vtIJdAy3">
+
+    <link rel="stylesheet" href="https://d68r7x6fc2frd.cloudfront.net/site.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" href="https://d68r7x6fc2frd.cloudfront.net/images/Gwnl4pq.png">
+    <link rel="icon" type="image/png"  href="https://d68r7x6fc2frd.cloudfront.net/images/Gwnl4pq.png">
+
+    <title>Apex Legends Knowledge Test | QuizFame</title>
+    <meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Apex Legends Knowledge Test" />
+<meta property="og:description" content="This incredibly popular game became a meteoric hit seemingly out of nowhere, but, are you as much into Apex Legends as you think you are? Take our quiz and find out!" />
+<meta property="og:url" content="https://quizfame.com/quiz/apex-legends-knowledge-test" />
+<meta property="og:image" content="https://d68r7x6fc2frd.cloudfront.net/images/aHVQF8EP7CcZb8MHLhMsmvb1NlrLyCP6BRCzU0EZ.jpeg" />
+
+
+    <style>
+        .answer{
+            margin-top: 15px;
+        }
+
+        .btn-fb{
+            color: #fff;
+            background-color: #3b579d;
+            border-color: #3b579d;
+        }
+
+        .btn-tw{
+            color: #fff;
+            background-color: #1da1f2;
+            border-color: #1da1f2;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+        }
+
+        @media (min-width: 0px){
+            .d-md-block {
+                display: block!important;
+            }
+        }
+
+        .camel{
+            margin-bottom: 25px;
+        }
+
+    </style>
+
+    <script>
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        var SESSION_DEPTH = getCookie('qf_session_depth');
+        if (SESSION_DEPTH == '') {
+            setCookie('qf_session_depth', '1', 3);
+            SESSION_DEPTH = '1'
+        } else {
+            SESSION_DEPTH = parseInt(SESSION_DEPTH) + 1;
+            SESSION_DEPTH = SESSION_DEPTH.toString();
+            setCookie('qf_session_depth', SESSION_DEPTH, 3)
+        };
+
+
+        console.log('Session Depth: '+SESSION_DEPTH);
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54541140-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        var test_segment = getCookie('test_segment');
+        console.log('Test Segment: ' + test_segment);
+
+        gtag('config', 'UA-54541140-8',{'dimension1': test_segment, 'dimension2': SESSION_DEPTH});
+
+    </script>
+
+    <script>
+        var ocelot = ocelot || {};
+        ocelot.testSegment = test_segment;
+        ocelot.sessionDepth = SESSION_DEPTH;
+    </script>
+    <script src="http://cdn.ocelot.studio/clients/quizfame.js" async></script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '437500140176496');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=437500140176496&amp;ev=PageView&amp;noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2959493759960215",
+            enable_page_level_ads: true
+        });
+    </script>
+    
+</head>
+<body>
+
+<div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="../index.html"><img src="https://d68r7x6fc2frd.cloudfront.net/images/yDy7qCz.png" style="height:50px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../category/gaming.html">Gaming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../category/tvandmovies.html">TV & Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../category/lifestyle.html">Lifestyle</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item" style="float:left">
+                <a class="nav-link" href="../top-users.html">🔥 Top Users</a>
+            </li>
+
+                            <li class="nav-item">
+                    <a class="nav-link" href="../login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="../register.html">Register</a>
+                </li>
+
+            
+        </ul>
+
+    </div>
+</nav>
+
+    <div class="row">
+    <div class="offset-sm-2 col-lg-8">
+
+        <div class="card" style="margin-top: 25px;">
+            <img src="https://d68r7x6fc2frd.cloudfront.net/images/aHVQF8EP7CcZb8MHLhMsmvb1NlrLyCP6BRCzU0EZ.jpeg" class="card-img-top" alt="...">
+            <div class="card-body" style="padding: 5px;text-align: center;">
+                <h5 class="card-title" style="margin-bottom:0px;">Apex Legends Knowledge Test</h5>
+            </div>
+        </div>
+
+
+        <div class="camel">
+        <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-2959493759960215"
+         data-ad-slot="3564082243"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+
+
+        <p>This incredibly popular game became a meteoric hit seemingly out of nowhere, but, are you as much into Apex Legends as you think you are? Take our quiz and find out!</p>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="apex-legends-knowledge-test/questions.html" class="btn btn-primary btn-lg btn-block answer" data-style="slide-left">Start Quiz</a>
+
+                <!--
+<script async="async" data-cfasync="false" src="//native.propellerclick.com/1?z=2715085&eid="></script>
+-->
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Popular Quizzes</h1>
+                <div class="row">
+                                            <div class="col-lg-4">
+                            <a href="clash-royale-knowledge-quiz.html" class="card" style="margin-top: 25px;">
+                                <img src="https://d68r7x6fc2frd.cloudfront.net/images/6JQJZKBjwumuEOlneiCNF1510tEXyg5AkqfxaY8G.jpeg" class="card-img-top" style="height: 200px;">
+                                <div class="card-body" style="padding: 5px;text-align: center;">
+                                    <h5 class="card-title" style="margin-bottom:0px;">Clash Royale Knowledge Quiz</h5>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-lg-4">
+                            <a href="how-much-do-you-know-about-youtubers.html" class="card" style="margin-top: 25px;">
+                                <img src="https://d68r7x6fc2frd.cloudfront.net/images/aPrExmIU19dCB0ECRgopICBZNSzJvR69yjV1o8dm.jpeg" class="card-img-top" style="height: 200px;">
+                                <div class="card-body" style="padding: 5px;text-align: center;">
+                                    <h5 class="card-title" style="margin-bottom:0px;">How Much Do You Know About YouTubers?</h5>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-lg-4">
+                            <a href="apple-general-knowledge-test.html" class="card" style="margin-top: 25px;">
+                                <img src="https://d68r7x6fc2frd.cloudfront.net/images/Hxdf4zgypg1Fnth5SrEbVMxUMAlAbSq2dzJ1KPRC.jpeg" class="card-img-top" style="height: 200px;">
+                                <div class="card-body" style="padding: 5px;text-align: center;">
+                                    <h5 class="card-title" style="margin-bottom:0px;">Apple General Knowledge Test</h5>
+                                </div>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+</div>
+
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            © 2019 QuizFame, <a href="../index.html">Home</a> | <a href="../privacy.html">Privacy</a> | <a href="../terms.html">Terms</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/spin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.min.js"></script>
+
+<script>
+    $('.answer').click(function(e){
+        var l = Ladda.create(this);
+        l.start();
+    });
+</script>
+
+<script>
+    $( ".camel" ).prepend( '<p style="text-align: center; font-size: 12px; color: rgba(43,42,42,0.99); padding-bottom: 2px; margin-bottom: 0; margin-top: 25px;">Advertisement</p>' );
+</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c25b69ac34","applicationID":"344603744","transactionName":"ZgFQYktXWUMCWkVZDV9Lc1VNX1heTHhBQD55EEZGZXVYXhdLXlwOVBZBamhDXkogVl9EEF4IXlNLdkRYDE4=","queueTime":0,"applicationTime":60,"atts":"SkZTFANNSk0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from quizfame.com/quiz/apex-legends-knowledge-test by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Oct 2019 13:10:45 GMT -->
+</html>
